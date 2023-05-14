@@ -9,10 +9,13 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
     <Grid>
         <Image
             x:Name="img"
-            Source="https://picsum.photos/1920/1080"
+            Source="{Binding ImgSouce}"
             Stretch="Fill" />
     </Grid>
 </Window>
