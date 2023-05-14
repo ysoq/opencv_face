@@ -34,8 +34,8 @@ namespace myface
                     var height = frame.Height;
 
                     //加载人眼、人脸模型数据
-                    OpenCvSharp.CascadeClassifier faceFinder = new CascadeClassifier(@"C:\code\2.face\haarcascade_frontalface_default.xml");
-                    OpenCvSharp.CascadeClassifier eyeFinder = new CascadeClassifier(@"C:\code\2.face\haarcascade_eye_tree_eyeglasses.xml");
+                    OpenCvSharp.CascadeClassifier faceFinder = new CascadeClassifier(@".\haarcascade_frontalface_default.xml");
+                    OpenCvSharp.CascadeClassifier eyeFinder = new CascadeClassifier(@".\haarcascade_eye_tree_eyeglasses.xml");
                     //进行检测识别
                     var faceRects = faceFinder.DetectMultiScale(frame);
                     var eyeRects = eyeFinder.DetectMultiScale(frame);
